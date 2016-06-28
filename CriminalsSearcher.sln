@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalsSearcher.Site", "CriminalsSearcher.Site\CriminalsSearcher.Site.csproj", "{BD637D62-AF26-498A-A727-A317C3887F58}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F060A583-B9D1-47C8-A504-9E582634238C} = {F060A583-B9D1-47C8-A504-9E582634238C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalsSearcher.Tests", "CriminalsSearcher.Tests\CriminalsSearcher.Tests.csproj", "{BB1BD8F4-F516-4E9C-900C-56EAE1E67196}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalsSearcher.Model", "CriminalsSearcher.Model\CriminalsSearcher.Model.csproj", "{49A41398-019C-4585-A22A-97C002A6C9C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalsSearcher.Data", "CriminalsSearcher.Data\CriminalsSearcher.Data.csproj", "{14FAA44D-1008-466E-B5F0-E43107A11E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalsSearcher.Services", "CriminalsSearcher.Services\CriminalsSearcher.Services.csproj", "{F060A583-B9D1-47C8-A504-9E582634238C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD637D62-AF26-498A-A727-A317C3887F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD637D62-AF26-498A-A727-A317C3887F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD637D62-AF26-498A-A727-A317C3887F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD637D62-AF26-498A-A727-A317C3887F58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1BD8F4-F516-4E9C-900C-56EAE1E67196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1BD8F4-F516-4E9C-900C-56EAE1E67196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1BD8F4-F516-4E9C-900C-56EAE1E67196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1BD8F4-F516-4E9C-900C-56EAE1E67196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A41398-019C-4585-A22A-97C002A6C9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A41398-019C-4585-A22A-97C002A6C9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A41398-019C-4585-A22A-97C002A6C9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A41398-019C-4585-A22A-97C002A6C9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FAA44D-1008-466E-B5F0-E43107A11E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FAA44D-1008-466E-B5F0-E43107A11E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FAA44D-1008-466E-B5F0-E43107A11E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FAA44D-1008-466E-B5F0-E43107A11E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F060A583-B9D1-47C8-A504-9E582634238C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F060A583-B9D1-47C8-A504-9E582634238C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F060A583-B9D1-47C8-A504-9E582634238C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F060A583-B9D1-47C8-A504-9E582634238C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+*.suo
+.vs/config/applicationhost.config
+CriminalsSearcher.Data/bin/*
+CriminalsSearcher.Data/obj/*
+CriminalsSearcher.Model/bin/*
+CriminalsSearcher.Model/obj/*
+CriminalsSearcher.Services/bin/*
+CriminalsSearcher.Services/obj/*
+CriminalsSearcher.Site/bin/*
+CriminalsSearcher.Site/obj/*
+CriminalsSearcher.Tests/bin/*
+CriminalsSearcher.Tests/obj/*
+packages/*

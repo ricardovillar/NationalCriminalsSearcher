@@ -1,0 +1,110 @@
+﻿@using System.Web.Optimization
+@model CriminalsSearcher.Site.Models.SearchViewModel
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search</h2>
+<hr />
+
+<div class="col-md-12">
+
+    @using (Html.BeginForm("Search", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" })) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Age (years)</label>
+            <div class="col-md-10">
+                @Html.HiddenFor(m => m.MinimumAge, new { @id = "MinimumAge" })
+                @Html.HiddenFor(m => m.MaximumAge, new { @id = "MaximumAge" })
+                <input type="text" id="Age" readonly class="slider-age">
+                <div id="slider-age" class="slider"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Gender</label>
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.Gender, Model.Genders, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Height (in)</label>
+            <div class="col-md-10">
+                @Html.HiddenFor(m => m.MinimumHeight, new { @id = "MinimumHeight" })
+                @Html.HiddenFor(m => m.MaximumHeight, new { @id = "MaximumHeight" })
+                <input type="text" id="Height" readonly class="slider-height">
+                <div id="slider-height" class="slider"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Weight (lb)</label>
+            <div class="col-md-10">
+                @Html.HiddenFor(m => m.MinimumWeight, new { @id = "MinimumWeight" })
+                @Html.HiddenFor(m => m.MaximumWeight, new { @id = "MaximumWeight" })
+                <input type="text" id="Weight" readonly class="slider-weight">
+                <div id="slider-weight" class="slider"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Nationality, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Nationality, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.FatherName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.FatherName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.MotherName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.MotherName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.PassportNumber, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.PassportNumber, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.DriverLicenseNumber, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.DriverLicenseNumber, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(m => m.MaxResults, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.MaxResults, new { @class = "", @id="MaxResults" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Search" />
+            </div>
+        </div>
+    }
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery-ui")
+    @Styles.Render("~/Content/jquery-ui")
+    @Scripts.Render("~/Scripts/views.home.search.js")
+}
